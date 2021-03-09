@@ -30,26 +30,32 @@ public class Nivell1 {
 		ciutat6 = ciutats.nextLine();
 
 		// Mostra per consola el nom de les 6 ciutats.
-		
-		System.out.println("Aquestes són les ciutats que has introduït : " + ciutat1 +" , "+ciutat2+" , "+ciutat3+" , "+ ciutat4+" , "+ciutat5+" i "+ciutat6);
-		
-		//Fase 2
-		
-		//Un cop tenim els noms de les ciutats guardats en variables haurem de pasar l’informacio a un array (arrayCiutats). 
-		
-		ArrayList <String> arrayCiutats = new ArrayList<String>();
-		
-		arrayCiutats.add(ciutat1); arrayCiutats.add(ciutat2); arrayCiutats.add(ciutat3); arrayCiutats.add(ciutat4); arrayCiutats.add(ciutat5); arrayCiutats.add(ciutat6);
-		
-		//Quan tinguem l’array ple, haurem de mostrar per consola el nom de les ciutats ordenadas per ordre alfabetic. 
-		
+
+		System.out.println("Aquestes són les ciutats que has introduït : " + ciutat1 + " , " + ciutat2 + " , " + ciutat3
+				+ " , " + ciutat4 + " , " + ciutat5 + " i " + ciutat6);
+
+		// Fase 2
+
+		// Un cop tenim els noms de les ciutats guardats en variables haurem de pasar
+		// l’informacio a un array (arrayCiutats).
+
+		ArrayList<String> arrayCiutats = new ArrayList<String>();
+
+		arrayCiutats.add(ciutat1);
+		arrayCiutats.add(ciutat2);
+		arrayCiutats.add(ciutat3);
+		arrayCiutats.add(ciutat4);
+		arrayCiutats.add(ciutat5);
+		arrayCiutats.add(ciutat6);
+
+		// Quan tinguem l’array ple, haurem de mostrar per consola el nom de les ciutats
+		// ordenadas per ordre alfabetic.
+
 		Collections.sort(arrayCiutats);
 		System.out.println("Ciutats per ordre alfabètic");
-		for (String print:arrayCiutats) {
+		for (String print : arrayCiutats) {
 			System.out.println(print);
 		}
-		
-
 
 	}
 
