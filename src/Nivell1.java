@@ -5,7 +5,7 @@ import java.util.Collections;
 public class Nivell1 {
 
 	public static void main(String[] args) {
-		// Fase 1
+		System.out.println("Fase 1");
 
 		// Crea sis variables tipu string buides.
 
@@ -34,7 +34,7 @@ public class Nivell1 {
 		System.out.println("Aquestes són les ciutats que has introduït : " + ciutat1 + " , " + ciutat2 + " , " + ciutat3
 				+ " , " + ciutat4 + " , " + ciutat5 + " i " + ciutat6);
 
-		// Fase 2
+		System.out.println("Fase 2");
 
 		// Un cop tenim els noms de les ciutats guardats en variables haurem de pasar
 		// l’informacio a un array (arrayCiutats).
@@ -56,6 +56,41 @@ public class Nivell1 {
 		for (String print : arrayCiutats) {
 			System.out.println(print);
 		}
+
+		System.out.println("Fase 3");
+
+		// Cambieu les vocals “a” dels noms de les ciutats per el numero 4 i guardeu els
+		// noms modificats en un nou array(ArrayCiutatsModificades).
+		// Mostreu per consola l’array modificat i ordenat per ordre alfabetic.
+
+		ArrayList<String> arrayCiutatsModificades = new ArrayList<String>();
+		ciutat1 =ciutat1.toUpperCase(); //converim l' string a majuscules
+		ciutat1 = ciutat1.replace('A', '4');
+		ciutat2=ciutat2.toUpperCase(); //converim l' string a majuscules
+		ciutat2 = ciutat2.replace('A', '4');
+		ciutat3=ciutat3.toUpperCase(); //converim l' string a majuscules
+		ciutat3 = ciutat3.replace('A', '4');
+		ciutat4=ciutat4.toUpperCase(); //converim l' string a majuscules
+		ciutat4 = ciutat4.replace('A', '4');
+		ciutat5=ciutat5.toUpperCase(); //converim l' string a majuscules
+		ciutat5 = ciutat5.replace('A', '4');
+		ciutat6=ciutat6.toUpperCase(); //converim l' string a majuscules
+		ciutat6 = ciutat6.replace('A', '4');
+		
+		arrayCiutatsModificades.add(ciutat1);
+		arrayCiutatsModificades.add(ciutat2);
+		arrayCiutatsModificades.add(ciutat3);
+		arrayCiutatsModificades.add(ciutat4);
+		arrayCiutatsModificades.add(ciutat5);
+		arrayCiutatsModificades.add(ciutat6);
+		Collections.sort(arrayCiutatsModificades);
+		System.out.println("Ciutats Modificades per ordre alfabètic");
+		for (String print : arrayCiutatsModificades) {
+			System.out.println(print);
+		}
+		
+		
+	
 
 	}
 
