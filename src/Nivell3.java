@@ -1,6 +1,10 @@
 import javax.swing.*;
 import java.util.ArrayList;
 public class Nivell3 {
+	
+	//Escriviu un programa que donat un numero N retorni la seqüència de Fibonacci fins al numero N.
+	//La seqüència de Fibonacci és la sèrie de nombres: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... 
+	//El número següent es troba sumant els dos números anteriors. 
 
 	public static void main(String[] args) {
 		System.out.println("Seqüència de Fibonacci \n ");
